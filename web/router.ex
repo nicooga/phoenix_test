@@ -7,6 +7,6 @@ defmodule HelloPhoenix.Router do
 
   scope "/api", HelloPhoenix do
     pipe_through :api
-    resources "/posts", PostsController, only: [:show]
+    resources "/posts", PostController
   end
 end
